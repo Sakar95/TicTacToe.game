@@ -1,0 +1,212 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+}
+
+/* main box */
+.main-box{
+    height: 100vh;
+    width: 100vw;
+    /* background-color:rgb(107, 107, 107); */
+    background-image: url(./bg01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+ 
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 1rem;
+}
+
+.navbar{
+    background-color:  #7e7c7c;
+    /* margin-left: 70px; */
+    width: 80vw;
+    height: 45px;
+    border-radius:10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+    box-shadow: 3px 3px 3px black;
+}
+
+.txt{
+    font-size: 28px;
+}
+.lbtn button{
+    width: 8vw;
+    height: 45px;
+    border-radius: 10px;
+    font-size:2vw;
+    padding: -1px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 2px 2px 2px black;
+
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.lbtn button:hover{
+     color: aliceblue;
+     background-color: #7e7c7c;
+}
+
+
+.game-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 150px;
+   
+}
+
+.play-box{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+}
+
+.box{
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all;
+    transition-duration: 0.5s;
+}
+.box:hover{
+    background-color: rgba(126, 126, 126, 0.636);
+
+}
+.boxtext{
+    font-family: 'Roboto', sans-serif;
+    font-size: 6vw;
+    color: black;
+}
+
+
+.br{
+    border-right: 0px;
+}
+.bb{
+    border-bottom: 0px;
+}
+.bl{
+    border-left: 0px;
+
+}
+.bt{
+    border-top: 0px;
+
+}
+
+/* .sdr{
+} */
+
+
+.info-box{
+    /* background-color: rgb(254, 254, 254); */
+    color: rgb(0, 0, 0);
+    height: 24vw;
+    width: 24vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.info-head{
+    font-size: 4vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.play-again{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    /* display:none; */
+}
+.ib{
+    display: inline-block;
+    font-size: 3vw;
+}
+
+.img{
+    height: 2vw;
+    width: 2vw;
+    color: white;
+}
+
+.rbtn {
+    /* display:none; */
+    height: 30px;
+    width: 100px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px black;
+
+}
+
+
+@media screen and (max-width: 700px){
+    
+    
+.navbar{
+    width:70vw
+}
+
+.lbtn button{
+    width:20vw;
+    font-size: 19px;
+}
+
+    .game-box{
+        flex-direction: column;
+        position: relative;
+        top: 50px;
+    }
+    
+    .play-box{
+        
+        grid-template-columns: repeat(3,70px);
+        grid-template-rows: repeat(3,70px);
+    }
+    
+    .info-box{
+        width: 275px;
+        margin-top: 60px;
+    }
+
+    .info-head{
+        font-size: 40px;
+    }
+    
+    .ib{
+        font-size: 25px;
+        
+    }
+    
+    hr{
+        margin: 10px;
+    }
+    
+    .play-again{
+        font-size: 20px;
+
+    }
+
+    .restart button{
+        box-shadow: 1px 1px black;
+        margin: 5px;
+    }
+   
+}
